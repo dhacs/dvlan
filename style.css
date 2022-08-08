@@ -160,9 +160,12 @@ nav img{
     .text-box h1{
         font-size: 20px;
     }
+    /*
+    uncomment these when you fix the mobile issue
     .nav-links ul li{
         display: block;
     }
+    
     .nav-links{
         position: absolute;
         background: #C8A2C8;
@@ -173,6 +176,16 @@ nav img{
         text-align: left;
         z-index: 2;
     }
+    */
+}
+
+/* for about me! NOTE THESE ARE LIKE WTF SO YOU DONT USE THEM 
+
+.about{
+    width: auto;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
 }
 
 /* for about me! NOTE THESE ARE LIKE WTF SO YOU DONT USE THEM 
