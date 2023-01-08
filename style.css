@@ -117,6 +117,35 @@ nav img{
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
+.head-box{
+    width: 90%;
+    color: #C8A2C8;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0; /* Make the element initially transparent */
+    transition: opacity 2s; /* Add a transition effect for the opacity property */
+}
+.head-box h1{
+    font-size: 75px;
+    
+}
+
+.head-box p{
+    margin: 10px 0 40px; 
+    font-size: 16px;
+    color: #C8A2C8;
+}
+
+.show{
+    opacity: 1;
+
+}
+
+
 .text-box h1{
     font-size: 75px;
 }
