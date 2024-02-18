@@ -3,7 +3,7 @@
 <head>
     <meta name= "viewport" content = "with = device-width, initial-scale =1 .0"> 
 <title>dylan ha</title>
-<link rel="icon" type="image/x-icon" href="pictures/famicom.png">
+<link rel="icon" type="image/x-icon" href="pictures/keycap.jpg">
 
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,44 +30,69 @@
             </ul>
         </div>
     </nav>
-    <section class="header" id="sec1">
-        
+    <section class="header" id="sec1"> 
         <div class = "head-box" >
+            <img src="pictures/me.jpg" alt="selfie" class="mypic">
             <h1>hi! i'm dylan. </h1>
             <p>programmer, photographer, keyboard enthusiast</p>
-            <a href="#sec2" class="pog-btn">click here to explore</a>
         </div>
     </section>
     <section class ="h2" id="sec2">
-            <div class = "text-box">
+            <div class = "text-box2">
             <h1>about me</h1>
-            <p>third year computer science student at Toronto Metropolitan University
-            <br>currently a Cloud Software Developer Intern for the Government of Canada
-            <br>experience in Python, Java, HTML, CSS, AWS, etc
-            <br>seeking summer 2024 internships! 
-            </p>
+                <img src="pictures/keyboard.jpg" alt="selfie" class="mypic2">
+                <div>
+                <p>third year computer science student based in Toronto, cloud software developer intern for the Government of Canada
+                <br>obsessed with eating sushi, snowboarding and building custom mechanical keyboards
+                <br>experience in Python, Java, C, HTML, CSS, React, AWS, etc
+                <br>seeking spring and summer 2024 internships! 
+                
+                </p>
             
             </div>
     </section>
 
-
-    <section class ="h3" id = "sec3">
-            <div class = "text-box" >
-            <h1>projects</h1>
-            <h2>view on <a href="https://github.com/dhacs" target="_blank">github</a></h2>
+    <section class="projects" id="sec3">
+        <h1>projects</h1>
+        <div class="project-container">
+            <div class="project-box">
+                <h2><a href="https://github.com/dhacs/Big-Bank">big bank</a></h2>
+                <p></p>
+                <p>python, flask, react, mysql, javascript</p>
+                <p> • full-stack banking web application</p>
+                <p> • react front-end for seamless interaction</p>
+                <p> • flask backend integrated with an SQL server</p>
+                
             </div>
+            <div class="project-box">
+                <h2><a href="https://github.com/dhacs/Card-Game-War">war game</a></h2>
+                <p></p>
+                <p>elixir, haskell, rust </p>
+                <p>• simulated "war" card game in three languages</p>
+                <p>• wrote recursion functions to determine winners</p>
+                <p>• demonsted paradigm programming proficiency</p>
+            </div>
+            <div class="project-box">
+                <h2><a href="https://github.com/dhacs/dvlan">personal website</a></h2>
+                <p></p>
+                <p>html, javascript, css</p>
+                <p>• what you're looking at right now</p>
+                <p>• showcased coding and photography projects</p>
+                <p>• incorporated interactive features and animations</p>
+                
+            </div>
+        </div>
     </section>
 
-    
 
-    <section class ="h4" id = "sec4">
+    <section class ="h2" id = "sec4">
             <div class = "text-box">
             <h1>resume</h1>
             <a href="resumeweb.pdf" target="_blank" class = "pog-btn">View Here</a> 
             </div>
     </section>
 
-    <section class ="h5" id = "sec5">
+    <section class ="header" id = "sec5">
             <div class = "text-box">
             <h1>contact me!</h1>
             <a href="mailto:mailtodha@gmail.com?subject=Mail from Personal Site" class = "pog-btn">Email</a>
@@ -76,21 +101,6 @@
             </div>
     </section>
 
-
-    <!-- ABOUT ME
-    <div class="con1">
-        <secion class="about">
-            <h1>about me</h1>
-            <p> third year computer science student at Toronto Metropolitan University</p>
-        </secion>
-      </div>
-    <div class="con2">
-        <secion class="projects">
-            <h1>projects</h1>
-            <p> no projects yet T-T</p>
-        </secion>
-      </div>
-    -->
     <script>
         window.onload = function() {
           var element = document.querySelector(".head-box");

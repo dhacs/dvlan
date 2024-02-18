@@ -26,35 +26,6 @@ body{
     position: relative;
 }
 
-.h3{
-    height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(pictures/DSC_0413.JPG);
-    background-position: center bottom;
-    background-size: cover;
-    position: relative;
-    
-}
-
-.h4{
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(pictures/mirror.jpg);
-    background-position: center top;
-    background-size: cover;
-    position: relative;
-}
-
-.h5{
-    height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(pictures/DSC_0413.JPG);
-    background-position: center bottom;
-    background-size: cover;
-    position: relative;
-    
-}
-
 nav{
     display: flex;
     padding: 2% 6%;
@@ -63,9 +34,6 @@ nav{
     position: fixed;
     top: 0;
     right: 0;
-    /**
-    background-color: #C8A2C8;
-    **/
     z-index: 999;
 }
 nav img{
@@ -104,10 +72,6 @@ nav img{
     width:100%;
 }
 
-
-
-
-/* editing text box  */
 .text-box{
     width: 90%;
     color: #C8A2C8;
@@ -126,17 +90,16 @@ nav img{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    opacity: 0; /* Make the element initially transparent */
-    transition: opacity 2s; /* Add a transition effect for the opacity property */
+    opacity: 0; 
+    transition: opacity 2s; 
 }
 .head-box h1{
     font-size: 75px;
-    
 }
 
 .head-box p{
     margin: 10px 0 40px; 
-    font-size: 16px;
+    font-size: 18px;
     color: #C8A2C8;
 }
 
@@ -145,21 +108,32 @@ nav img{
 
 }
 
-
 .text-box h1{
     font-size: 75px;
 }
 
-
-
-
-.text-box p{
-    margin: 10px 0 40px; 
-    font-size: 16px;
+.text-box2{
+    width: 90%;
     color: #C8A2C8;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
-/* this button kinda looks like some dookiesauce so might just have title ONLY */
+.text-box2 h1{
+    text-align: center;
+    font-size: 75px;
+}
+
+.text-box2 p{
+    margin: 10px 0 40px; 
+    font-size: 18px;
+    color: #C8A2C8;
+    text-align: center;
+}
+
 .pog-btn{
     text-decoration: none;
     display: inline-block;
@@ -180,71 +154,86 @@ nav img{
     transform: translateY(-2px);
 }
 
+.mypic {
+    width: 300px; 
+    height: 300px; 
+    margin: 0 auto; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow */
+}
+
+.mypic2 {
+    width: 30%; 
+    height: 50%; 
+    margin: 0 auto; 
+    overflow: hidden; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+.projects {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(pictures/DSC_0413.JPG);
+    background-position: center bottom;
+    background-size: cover;
+    position: relative;
+    padding: 20px; 
+}
+
+.projects h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 75px;
+    color: #C8A2C8;
+}
+
+.lol {
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+}
+
+.project-container {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.project-box {
+    width: calc(23.33% - 20px);
+    margin: 10px; 
+    height: 240px;
+    background-color: rgba(240, 240, 240, 0.6);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-box:hover {
+    transform: translateY(-10px);
+}
+
+.project-box h2 {
+    margin-top: 0;
+    font-size: x-large;
+}
+
+.project-box p {
+    margin-bottom: 10px;
+}
+
 
 @media(max-width: 700px){
     .text-box h1{
         font-size: 20px;
     }
-    /*
-    uncomment these when you fix the mobile issue
-    .nav-links ul li{
-        display: block;
-    }
-    
-    .nav-links{
-        position: absolute;
-        background: #C8A2C8;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: 0;
-        text-align: left;
-        z-index: 2;
-    }
-    */
 }
 
-/* for about me! NOTE THESE ARE LIKE WTF SO YOU DONT USE THEM 
-
-.about{
-    width: auto;
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
-}
-
-
-split screen code below
-
-.con1{
-    width: 100%;
-    height: 500px;
-    background: linear-gradient(
-      to right,
-      #C8A2C8 0%,
-      #C8A2C8 50%,
-      #fcf2d8 50%,
-      #fcf2d8 100%
-    );
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .con2{
-    width: 100%;
-    height: 500px;
-    background: linear-gradient(
-      to right,
-      #fcf2d8 0%,
-      #fcf2d8 50%,
-      #C8A2C8 50%,
-      #C8A2C8 100%
-    );
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  */
-
-  
