@@ -164,6 +164,7 @@ nav img{
 }
 
 
+
 .projects {
     min-height: 100vh;
     display: flex;
@@ -216,52 +217,58 @@ nav img{
 }
 
 
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+}
+
 
 .h2 {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column; /* Stack the heading and container */
     align-items: center;
-    justify-content: flex-start; 
-    min-height: 100vh; 
-    padding: 5%;
+    justify-content: flex-start; /* Start content closer to the top */
+    min-height: 100vh; /* Full height of the viewport */
+    padding: 5%; /* Responsive padding */
     box-sizing: border-box;
 }
 
 .h2 h1 {
-    font-size: clamp(2rem, 5vw, 4.5rem);
-    margin-bottom: 3rem; 
-    color: #C8A2C8; 
-    text-align: center;
+    font-size: clamp(2rem, 5vw, 4.5rem); /* Responsive font size */
+    margin-bottom: 3rem; /* Responsive margin below heading */
+    color: #C8A2C8; /* Match theme color */
+    text-align: center; /* Center the heading */
 }
 
 .about-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem; 
+    gap: 2rem; /* Space between the image and text */
     max-width: 90%;
-    margin-top: 1rem; 
-    flex-wrap: wrap; 
+    margin-top: 1rem; /* Slightly raise the section */
+    flex-wrap: wrap; /* Enable wrapping for responsiveness */
     text-align: center;
 }
 
 
 .about-text {
-    white-space: normal;
+    white-space: normal; /* Allow text to wrap for readability */
     color: #C8A2C8;
     line-height: 1.8;
-    font-size: clamp(1rem, 2vw, 1.25rem); 
-    max-width: 70%; 
+    font-size: clamp(1rem, 2vw, 1.25rem); /* Responsive font size */
+    max-width: 70%; /* Dynamically adjust the width relative to the container */
     text-align: left;
-    flex: 1; 
+    flex: 1; /* Ensure it adjusts proportionally with the photo */
 }
 
 
 .about-photo-container {
     position: relative;
-    width: 400px; 
-    height: 400px; 
-    perspective: 1000px; 
+    width: 400px; /* Match the width of the photo */
+    height: 400px; /* Ensure it's a square for the spinning effect */
+    perspective: 1000px; /* Add perspective for 3D rotation */
     margin: 0 auto;
 }
 
@@ -270,31 +277,25 @@ nav img{
     height: auto;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    backface-visibility: hidden; 
-    transition: transform 1s ease; 
+    backface-visibility: hidden; /* Hides the back when rotated */
+    transition: transform 1s ease; /* Smooth spinning animation */
     position: absolute;
     top: 0;
     left: 0;
 }
 
 .about-photo-front {
-    z-index: 2; 
+    z-index: 2; /* Place the front photo above the back */
 }
 
 .about-photo-back {
-    transform: rotateY(180deg); 
+    transform: rotateY(180deg); /* Flip the back photo initially */
 }
 
 .about-photo-container:hover .about-photo-front {
-    transform: rotateY(180deg); 
+    transform: rotateY(180deg); /* Spin the front photo out of view */
 }
 
 .about-photo-container:hover .about-photo-back {
-    transform: rotateY(360deg); 
-}
-
-@media(max-width: 700px){
-    .text-box h1{
-        font-size: 20px;
-    }
+    transform: rotateY(360deg); /* Spin the back photo into view */
 }
